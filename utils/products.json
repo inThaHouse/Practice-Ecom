@@ -1,23 +1,23 @@
 [
 	{
-		"title": "Space Jelly Tshirt",
-		"description": "Description for space jelly tshirt",
+		"title": "Hustle Hoodie",
+		"description": "Description for hustle hoodie",
 		"price": 20.0,
-		"image": "/images/spacejelly-tshirt.jpg",
+		"image": "/images/hoodie.webp",
 		"priceId": "price_1I0cNrHbFre35EnhWUbxHiQk"
 	},
 	{
-		"title": "Space Jelly combo",
-		"description": "Description for space jelly combo",
+		"title": "Double Threat Hoodie",
+		"description": "Description for double threat hoodie",
 		"price": 25.0,
-		"image": "/images/spacejelly-combo.jpg",
+		"image": "/images/hoodie2.jpg",
 		"priceId": "price_1I0cPYHbFre35EnhdxZI6qLV"
 	},
 	{
-		"title": "Space Jelly Stickers",
-		"description": "Description for space jelly stickers",
+		"title": "Blue Hoodie",
+		"description": "Description for blue hoodie",
 		"price": 10.0,
-		"image": "/images/spacejelly-stickers.jpg",
+		"image": "/images/hoodie3.jpg",
 		"priceId": "price_1I0cQ0HbFre35EnhuQ00Mmzk"
 	}
 ]
