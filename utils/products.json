@@ -1,23 +1,23 @@
 [
-	{
-		"title": "Hustle Hoodie",
-		"description": "Description for hustle hoodie",
-		"price": 20.0,
-		"image": "/images/hoodie.webp",
-		"priceId": "price_1I0cNrHbFre35EnhWUbxHiQk"
-	},
-	{
-		"title": "Double Threat Hoodie",
-		"description": "Description for double threat hoodie",
-		"price": 25.0,
-		"image": "/images/hoodie2.jpg",
-		"priceId": "price_1I0cPYHbFre35EnhdxZI6qLV"
-	},
-	{
-		"title": "Blue Hoodie",
-		"description": "Description for blue hoodie",
-		"price": 10.0,
-		"image": "/images/hoodie3.jpg",
-		"priceId": "price_1I0cQ0HbFre35EnhuQ00Mmzk"
-	}
+  {
+    "title": "Hustle Hoodie",
+    "description": "Description for hustle hoodie",
+    "price": 120.0,
+    "image": "/images/hoodie.webp",
+    "priceId": "price_1I0cNrHbFre35EnhWUbxHiQk"
+  },
+  {
+    "title": "Double Threat Hoodie",
+    "description": "Description for double threat hoodie",
+    "price": 125.0,
+    "image": "/images/hoodie2.jpg",
+    "priceId": "price_1I0cPYHbFre35EnhdxZI6qLV"
+  },
+  {
+    "title": "Blue Hoodie",
+    "description": "Description for blue hoodie",
+    "price": 110.0,
+    "image": "/images/hoodie3.jpg",
+    "priceId": "price_1I0cQ0HbFre35EnhuQ00Mmzk"
+  }
 ]
