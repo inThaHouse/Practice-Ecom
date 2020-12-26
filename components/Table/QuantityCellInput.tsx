@@ -17,7 +17,7 @@ const QuantityCellInput = ({ quantity, priceId }: Props) => {
     )
 
     // @ts-ignore
-    updateQuantity(priceId, quantityInput.value)
+    updateQuantity(priceId, Number(quantityInput.value))
   }
 
   return (
