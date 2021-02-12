@@ -7,6 +7,7 @@ import React from 'react'
 import AddToCartButton from 'components/Buttons/AddToCart'
 import Layout from 'components/Layout/Layout'
 import Footer from 'components/Footer/Footer'
+import PageHeader from 'components/PageHeader/PageHeader'
 
 interface ProductPageProps {
   product: IProduct
@@ -22,14 +23,8 @@ const ProductPage = ({ product }: ProductPageProps) => {
       </Head>
       <Layout>
         <>
-          <Heading
-            textAlign='center'
-            fontWeight='400'
-            fontSize={['2rem', '4rem']}
-            mb='30px'
-          >
-            {title}
-          </Heading>
+          <PageHeader pageTitle={title} />
+
           <Flex
             minH={['auto', 'auto', '50vh']}
             flexDirection={['column', 'column', 'row']}
