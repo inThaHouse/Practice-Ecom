@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <Flex
       as='footer'
-      padding='1.5rem'
+      padding='1.2rem'
       bg='blue.600'
       position='fixed'
       width='100%'

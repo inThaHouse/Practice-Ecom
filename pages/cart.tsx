@@ -1,8 +1,8 @@
 import Layout from 'components/Layout/Layout'
 import Head from 'next/head'
-import { Heading } from '@chakra-ui/react'
 import { useCartContext } from 'hooks/use-cart'
 import {
+  Heading,
   Table,
   Thead,
   Tbody,
@@ -17,6 +17,7 @@ import { IProduct } from 'utils/types/IProduct'
 import React from 'react'
 import Footer from 'components/Footer/Footer'
 import QuantityCellInput from 'components/Table/QuantityCellInput'
+import PageHeader from 'components/PageHeader/PageHeader'
 
 const cart = () => {
   const { cartDetails, startCheckout } = useCartContext()
@@ -30,14 +31,8 @@ const cart = () => {
 
       <Layout>
         <main>
-          <Heading
-            textAlign='center'
-            fontWeight='400'
-            fontSize='4rem'
-            mb='30px'
-          >
-            Cart
-          </Heading>
+          <PageHeader pageTitle='cart' />
+
           <Table variant='simple' size={'sm'}>
             <TableCaption>
               {' '}
@@ -49,6 +44,7 @@ const cart = () => {
                 'Your cart is empty'
               )}
             </TableCaption>
+
             <Thead>
               <Tr>
                 <Th>Product Name</Th>
@@ -57,6 +53,7 @@ const cart = () => {
                 <Th isNumeric>Item Total</Th>
               </Tr>
             </Thead>
+
             <Tbody>
               {productsData.map((product: IProduct, index: number) => {
                 if (products[product.priceId]) {
@@ -76,6 +73,7 @@ const cart = () => {
                     </Tr>
                   )
                 }
+
                 return <Tr key={index}></Tr>
               })}
             </Tbody>

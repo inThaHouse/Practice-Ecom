@@ -1,5 +1,4 @@
 import Navbar from 'components/NavBar/Navbar'
-import '../styles/globals.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
 import { CartContext, useCart } from '../hooks/use-cart'

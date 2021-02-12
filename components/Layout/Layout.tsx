@@ -6,7 +6,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <Container maxW='960px' centerContent py={['1rem', '3rem']}>
+    <Container maxW='960px' centerContent py={['1rem', '1.5rem']}>
       {children}
     </Container>
   )

@@ -9,10 +9,10 @@ interface Props {
 const QuantityCellInput = ({ quantity, priceId }: Props) => {
   const { updateQuantity } = useCartContext()
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault()
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
 
-    const quantityInput = Array.from(e.currentTarget.elements).find(
+    const quantityInput = Array.from(event.currentTarget.elements).find(
       (element: any) => element.name === 'quantity'
     )
 

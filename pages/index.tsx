@@ -6,29 +6,24 @@ import { IProduct } from 'utils/types/IProduct'
 import Layout from '../components/Layout/Layout'
 import AddToCartButton from 'components/Buttons/AddToCart'
 import Footer from 'components/Footer/Footer'
+import PageHeader from 'components/PageHeader/PageHeader'
 
 const Homepage = () => {
   return (
     <div>
       <Head>
-        <title>inThaShop e-Store</title>
+        <title>Home - inThaShop</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <Layout>
         <main>
-          <Heading
-            textAlign='center'
-            fontWeight='400'
-            fontSize={['2rem', '4rem']}
-          >
-            Our latest stuff!
-          </Heading>
+          <PageHeader pageTitle='Our latest stuff!' />
           <SimpleGrid
             columns={[1, 2, 3]}
             spacing={10}
             mb='100px'
-            mt={['10px', '25px', '60px']}
+            mt={['1rem', '1.5rem']}
           >
             {products.map(({ title, image, priceId, price }: IProduct) => (
               <Box
@@ -46,7 +41,7 @@ const Homepage = () => {
                 <Link href={`/products/${priceId}`}>
                   <Image src={image} alt={title} cursor='pointer' />
                 </Link>
-                <div>
+                <Box>
                   <Heading
                     fontWeight='semibold'
                     as='h2'
@@ -58,7 +53,7 @@ const Homepage = () => {
                   <Heading as='h2' size={'sm'} mt={'10px'}>
                     {price} $
                   </Heading>
-                </div>
+                </Box>
 
                 <AddToCartButton priceId={priceId} productTitle={title} />
               </Box>
